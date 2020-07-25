@@ -1,7 +1,7 @@
 let blogPath = window.location.pathname;
 let blogName = blogPath.split("/").pop().split(".").shift();
 let blogID = blogName.split("blog").pop();
-let singlePage = blogID != "index" && blogID != "-archive";
+let singlePage = blogID != "index" && blogID != "-archive" && blogID;
 
 function blogTXT(id) {
   let textPath = "/Blog/blog-text/blog".concat(id, ".txt");
@@ -21,13 +21,13 @@ if (singlePage) {
 if (blogID == "-archive") {
   var numberOfBlogs = 7; // number of blog cards to show on archive page
 }
-if (blogID == "index") {
+if (blogID == "index" || blogID == false) {
   var numberOfBlogs = 6; // number of blog cards to show on home page
 }
 
 //blog image
 let blogImg = document.querySelector(".blog-image");
-if (blogID != "-archive" && blogID != "index") {
+if (singlePage) {
   let imgPath = "/Blog/blog-images/blog".concat(blogID, ".jpg");
   blogImg.src = imgPath;
 }
