@@ -1,0 +1,23 @@
+body {
+  animation: fadeUp 0.5s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.make-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}

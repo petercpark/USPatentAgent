@@ -1,0 +1,168 @@
+<!-- 
+Do XMLHTTPS request in javascript to call external text files into becoming a html blog post appending a template
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Patent Agent</title>
+
+    <!-- bootstrap -->
+    <section>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+    <!-- import my stuff -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div w3-include-html="/assets/nav.html"></div>
+
+    <!-- Title section  -->
+    <div class="bgTitle parallax">
+      <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="vw-100">
+          <div
+            class="row justify-content-center align-middle align-items-center"
+          >
+            <!-- title heading -->
+            <h1 class="text-center display-4">
+              United States Patents
+            </h1>
+          </div>
+          <div
+            class="row justify-content-center align-middle align-items-center"
+          >
+            <!-- subtitle -->
+            <h4 class="text-center lead">
+              세상에 없던,
+              <span class="d-inline-block"
+                >세상이 꼭 필요한 멋진 아이디어.</span
+              >
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services section -->
+    <div class="container-fluid p-5 bg-white" id="services">
+      <div class="row justify-content-center">
+        <img
+          src="./images/undraw1.svg"
+          alt="미국 특허는 생소하신가요?"
+          class="undrawImg"
+        />
+      </div>
+      <div class="row fade-in">
+        <div class="col-12 text-center text-dark">
+          <h2>
+            미국 특허를 <span class="d-inline-block">생각 중이신가요?</span>
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4 fade-in">
+        <div class="col-md-4 text-dark">
+          <p class="lead">
+            한국 특허를 내시는 것보다 방법에 따라 더 쉬울 수도 있습니다. 미국
+            특허가 다른 어느 나라의 특허 보다 더 강력한 것은 두 말할 필요가
+            없죠. 전략적으로 특허를 통해 수익을 현실화 하는 것을 도와
+            드리겠습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div class="bgAbout parallax py-5" id="about">
+      <div class="container-fluid h-100 d-flex align-items-center">
+        <div class="w-100">
+          <div
+            class="row align-items-center justify-content-center text-md-center text-left px-md-0 px-4"
+          >
+            <div class="col-md-6 mb-md-0 mb-3">
+              <h1 class="text-white text-shadow">Who's Dr. Byungjoo Park?</h1>
+            </div>
+            <div class="col-md px-md-5 fade-in">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold text-center px-5">
+                    박병주 박사
+                  </h5>
+                  <ul class="card-text px-md-5 text-center" id="resume">
+                    <li>
+                      ​미국 특허 변리사
+                    </li>
+                    <li>한국생산기술연구원 미국센터 자문위원</li>
+                    <li>
+                      미국 UCLA 의대 방사선과 Visiting Scholar
+                    </li>
+                    <li>
+                      미국 캘리포니아주 한의사
+                    </li>
+                    <li>일본 국립 재료 연구원 Research Fellow</li>
+                    <li>연세대학교 금속공학과 학사, 박사</li>
+                  </ul>
+                  <hr class="w-75" />
+                  <a href="./about.html" class="btn btn-danger text-right"
+                    >More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog section -->
+    <div class="container p-5" id="blog">
+      <div class="row mb-4">
+        <div class="col-12 text-center text-dark">
+          <h2>Blog</h2>
+        </div>
+      </div>
+      <div class="row blog-cards-archive">
+        <!-- cards -->
+
+        <!-- insert additional cards above this comment -->
+      </div>
+
+      <hr class="w-100 fade-in" />
+      <div class="row justify-content-center pt-3">
+        <a
+          href="/Blog/blog-cards/blog-archive.html"
+          class="btn btn-lg btn-danger text-light fade-in"
+        >
+          More!
+        </a>
+      </div>
+    </div>
+
+    <div w3-include-html="/assets/footer.html"></div>
+    <script src="/scripts/w3-include-HTML.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/append.js"></script>
+  </body>
+</html>
