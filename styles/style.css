@@ -3,6 +3,11 @@ body {
   scroll-behavior: smooth;
 }
 
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: black;
 }

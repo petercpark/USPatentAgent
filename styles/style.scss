@@ -3,6 +3,10 @@ body {
   scroll-behavior: smooth;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(0, 0, 0);
 }
